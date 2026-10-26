@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Love ❤️</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding: 60px 15px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.2);
+            padding: 30px 20px;
+            border-radius: 25px;
+            max-width: 350px;
+            margin: auto;
+            box-shadow: 0 0 25px #ffb6c1;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            50% { transform: scale(1.3); }
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        button {
+            background: white;
+            color: #ff4081;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffe0eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+
+        <h1>Hey, My Love! 🥹</h1>
+
+        <p>
+            You are my favourite person 💕<br>
+            My happiness, my comfort,<br>
+            and my forever person. 🫶
+        </p>
+
+        <button onclick="showLove()">
+            Open My Heart 💌
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+            "I choose you today, tomorrow and always! ❤️😘";
+        }
+    </script>
+
+</body>
+</html>
